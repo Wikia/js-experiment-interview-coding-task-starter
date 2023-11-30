@@ -16,7 +16,6 @@ const API = `https://services.fandom.com`;
 
 const render = (wikiId: number, articleId: number) => {
   logger.trace("Run TemplateJS", { wikiId, articleId});
-  // logger.trace("Problem happend")
   /**
    * Start HERE
    */

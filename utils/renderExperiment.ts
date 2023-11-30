@@ -22,7 +22,7 @@ export const renderExperiment = (
       render(wikiId, articleId);
       injectStyles(cssText, `experimentjs-styles`);
     } catch (error) {
-      logger.debug(`problem with run experiment`, error);
+      logger.error(`During running an experiment an error occurred:`, error);
     }
 
     return null;

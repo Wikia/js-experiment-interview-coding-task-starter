@@ -1,30 +1,32 @@
-# Experiment
+# Experiment creator
 
-## Qucik start
+## Quick start
 
-1. Install nvm / node (ver. 18)
-2. (If you use nvm) Switch nvm to correct version of node (specified in `.nvrmc`)
-3. Run `yarn` or `npm` to install deps
-4. Start developing
-   `npx parcel src/YOUR_EXPERIMENT_MODULE/index.js`  - to start dev server for experiment
+1. Install `node`, and `yarn` or `npm`.
+2. Set node to correct version (specified in `.nvmrc`).
+3. Run `yarn` or `npm` to install dependencies.
+4. Run below command to start dev server for an experiment:
+   `npx parcel src/YOUR_EXPERIMENT_MODULE/index.js`
+5. Preview the experiment on Fandom websites (see the section below)
+6. You are all set and ready for coding. :)
 
 ## Create new experiment
 
-1. Create new folder in `src` dir with name of your module. You can copy `src/_Template` as starting point for your experiment. Experiment module require only `index.js|ts|tsx` file
-2. Run  dev server to compile code:
+1. Create new folder in `src` dir with name of your module. You can copy `src/_Template` as a starting point for your experiment. Experiment module requires only `index.js|ts|tsx` file.
+2. Run dev server to compile the code.
 
 ```bash
 npx parcel src/YOUR_EXPERIMENT_MODULE/index.js
 ```
 
-3. Open `http://localhost:1234/index.js`, you will see compiled code of your experiment
+3. Open `http://localhost:1234/index.js` - you will see compiled code of your experiment.
 
-## Preview experiment in fandom websites
+## Preview the experiment on Fandom websites
 
-1. Install  [Requestly plugin](https://requestly.io/)  to your browser
-2. Replace `pathfinder.js` with `http://localhost:1234/index.js`, configuration steps:
-    1. Create new **Redirect request**
-    2. **If request**: *URL > Contains >* `pathfinder.js`
-    3. **Redirect to**: URL `http://localhost:1234/index.js`
-3. Open any fandom website to verify changes
-4. After make changes in your code, you need to reload page
+1. Add  [Requestly extension](https://requestly.io/) to your browser.
+2. Set up a new Requestly rule:
+   1. Click **New rule** and select **Redirect request**
+   2. Set up the rule to redirect request to `http://localhost:1234/index.js` if URL contains `pathfinder.js`
+   ![Requestly_rule.png](Requestly_rule.png)
+3. Open any Fandom website to verify if Requestly rule is activated and redirects a request.
+4. After making changes in your code, you need to reload the page.

@@ -1,0 +1,25 @@
+{
+  "devDependencies": {
+    "@parcel/core": "^2.9.1",
+    "@parcel/transformer-inline-string": "2.9.1",
+    "@parcel/transformer-sass": "2.9.1",
+    "@parcel/transformer-vue": "2.9.1",
+    "parcel": "^2.9.1",
+    "process": "^0.11.10",
+    "rimraf": "^5.0.1"
+  },
+  "dependencies": {
+    "@types/react": "^18.2.21",
+    "@types/react-dom": "^18.2.7",
+    "react": "^18",
+    "react-dom": "^18",
+    "typescript": "^5.2.2",
+    "vue": "^3.3.4"
+  },
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "scripts": {
+    "clean": "rimraf dist",
+    "templatejs": "parcel ./src/_TemplateJS/index.ts",
+    "templatereact": "parcel ./src/_TemplateReact/index.tsx"
+  }
+}
